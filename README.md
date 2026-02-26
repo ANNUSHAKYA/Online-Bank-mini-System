@@ -10,13 +10,12 @@ The application is built using **HTML, CSS, and JavaScript** and is deployed as 
 ---
 
 ## Features
-
-### 1. Account Creation Screen
+1. Account Creation Screen
 - Create a new bank account
 - Fields: Account Number, Holder Name, Initial Balance, KYC Status
 - Validates input before account creation
 
-### 2. Transaction Screens
+2. Transaction Screens
 - Deposit money
 - Withdraw money
 - Transfer money to another account
@@ -24,7 +23,7 @@ The application is built using **HTML, CSS, and JavaScript** and is deployed as 
   - Sender KYC is verified
   - Sufficient balance is available
 
-### 3. Account Listing Screen
+3. Account Listing Screen
 - Displays all created accounts
 - Shows account number, holder name, balance, and KYC status
 
@@ -34,7 +33,7 @@ The application is built using **HTML, CSS, and JavaScript** and is deployed as 
 
 ---
 
-## ✅ Validation Rules
+Validation Rules
 - Account numbers must be unique
 - Balance cannot be negative
 - Deposit/withdraw amount must be greater than zero
@@ -43,15 +42,9 @@ The application is built using **HTML, CSS, and JavaScript** and is deployed as 
 
 ---
 
-## 🛠 Tech Stack
+Tech Stack
 - HTML
 - CSS (Responsive Design)
 - JavaScript (Business Logic & Validation)
 
----
 
-
-
----
-
-## 📂 Project Structure
