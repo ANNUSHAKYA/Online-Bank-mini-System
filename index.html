@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Banking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏦 Online Banking System</h1>
+
+<!-- CREATE ACCOUNT (VISIBLE FIRST) -->
+<section id="createSection">
+  <h2>Create Account</h2>
+
+  <label for="accNo">Account Number</label>
+  <input type="text" id="accNo" placeholder="Account Number" required>
+
+  <label for="name">Account Holder Name</label>
+  <input type="text" id="name" placeholder="Account Holder Name" required>
+
+  <label for="balance">Initial Balance</label>
+  <input type="number" id="balance" placeholder="Initial Balance" min="0" required>
+
+  <label>
+    <input type="checkbox" id="kyc"> KYC Verified
+  </label>
+
+  <button type="button" onclick="createAccount()">Create Account</button>
+</section>
+
+<!-- BANKING DASHBOARD (HIDDEN INITIALLY) -->
+<section id="bankSection" class="hidden">
+  <h2>Banking Dashboard</h2>
+
+  <h3>Deposit</h3>
+  <input type="number" id="depAmt" placeholder="Amount" min="1">
+  <button type="button" onclick="deposit()">Deposit</button>
+
+  <h3>Withdraw</h3>
+  <input type="number" id="withAmt" placeholder="Amount" min="1">
+  <button type="button" onclick="withdraw()">Withdraw</button>
+
+  <h3>Transfer</h3>
+  <input type="text" id="receiverAcc" placeholder="Receiver Account Number">
+  <input type="number" id="transAmt" placeholder="Amount" min="1">
+  <button type="button" onclick="transfer()">Transfer</button>
+
+  <h3>Account Report</h3>
+  <div id="report"></div>
+</section>
+
+<p id="message"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
